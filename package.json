@@ -1,0 +1,36 @@
+{
+  "name": "kad-distance",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir lib --source-maps inline",
+    "test": "mocha ./lib",
+    "sample": "node ./lib/sample.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinyoshiaki/simple-datachannel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinyoshiaki/simple-datachannel/issues"
+  },
+  "homepage": "https://github.com/shinyoshiaki/simple-datachannel#readme",
+  "dependencies": {
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-power-assert": "^2.0.0",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0",
+    "power-assert": "^1.6.0"
+  }
+}
