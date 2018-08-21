@@ -1,6 +1,6 @@
 import * as util from "./util";
 
-export default function distance(a16, b16) {
+export function distance(a16, b16) {
   let a = util
     .convertBase(a16, 16, 2)
     .toString()
