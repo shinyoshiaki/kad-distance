@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shinyoshiaki/simple-datachannel.git"
+    "url": "git+https://github.com/shinyoshiaki/kad-distance.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shinyoshiaki/simple-datachannel/issues"
+    "url": "https://github.com/shinyoshiaki/kad-distance/issues"
   },
-  "homepage": "https://github.com/shinyoshiaki/simple-datachannel#readme",
+  "homepage": "https://github.com/shinyoshiaki/kad-distance#readme",
   "dependencies": {
     "sha1": "^1.1.1"
   },
