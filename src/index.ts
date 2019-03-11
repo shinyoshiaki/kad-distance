@@ -1,6 +1,9 @@
 import * as util from "./util";
 
-export function distance(a16, b16) {
+export function distance(a16: string, b16: string) {
+  if (a16.length !== 40 || b16.length !== 40) {
+    throw new Error("error bit length");
+  }
   let a = util
     .convertBase(a16, 16, 2)
     .toString()

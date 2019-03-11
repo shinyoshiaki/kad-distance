@@ -1,4 +1,4 @@
-export function parseBigInt(bigint, base) {
+export function parseBigInt(bigint: string, base: number) {
   //convert bigint string to array of digit values
   for (var values = [], i = 0; i < bigint.length; i++) {
     values[i] = parseInt(bigint.charAt(i), base);
@@ -6,7 +6,7 @@ export function parseBigInt(bigint, base) {
   return values;
 }
 
-export function formatBigInt(values, base) {
+export function formatBigInt(values: number[], base: number) {
   //convert array of digit values to bigint string
   for (var bigint = "", i = 0; i < values.length; i++) {
     bigint += values[i].toString(base);
@@ -14,7 +14,11 @@ export function formatBigInt(values, base) {
   return bigint;
 }
 
-export function convertBase(bigint, inputBase, outputBase) {
+export function convertBase(
+  bigint: string,
+  inputBase: number,
+  outputBase: number
+) {
   //takes a bigint string and converts to different base
   var inputValues = parseBigInt(bigint, inputBase),
     outputValues = [], //output array, little-endian/lsd order

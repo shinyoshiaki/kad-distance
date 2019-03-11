@@ -1,12 +1,10 @@
 {
     "presets": [
-      "es2015"
+        "@babel/env",
+        "@babel/typescript"
     ],
-    "env": {
-      "development": {
-        "presets": [
-          "power-assert"
-        ]
-      }
-    }
-  }
+    "plugins": [
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread"
+    ]
+}
