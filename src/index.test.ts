@@ -1,4 +1,4 @@
-import { distance } from "../src";
+import { distance } from "./index";
 
 describe("distance", () => {
   test("success", () => {

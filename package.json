@@ -1,6 +1,6 @@
 {
   "name": "kad-distance",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
@@ -8,25 +8,18 @@
     "src"
   ],
   "scripts": {
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "npm run type-check -- --watch",
-    "build": "npm run build:types && npm run build:js",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
-    "test": "jest"
+    "build": "tsc",
+    "update": "rm -rf ./lib && npm run build",
+    "test": "jest",
+    "deploy":"npm run test && npm run update"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.2.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
-    "@babel/preset-typescript": "^7.1.0",
     "@types/jest": "^24.0.6",
     "@types/sha1": "^1.1.1",
     "jest": "^24.1.0",
     "ts-jest": "^24.0.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.4.3",
+    "tslib": "^1.9.3"
   },
   "dependencies": {
     "sha1": "^1.1.1"
